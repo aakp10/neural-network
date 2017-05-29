@@ -1,4 +1,4 @@
-//img filter packages
+//img filter packages 
 import scipy
 import numpy
 from scipy.misc import imread ,imshow
@@ -19,7 +19,7 @@ fimg=numpy.array((678,678),dtype='float')
 for i in xrange(682) :
 	for j in xrange(682):
 			 a=reimg[i:i+5,j:j+5]*filter
-#convolving 5x5 kernel over reimg and storing in fimg
+#convolving 5x5 kernel over reimg and storing in fimg  loop for covering entire data
 			 for k in xrange(5) :
 			 	for l in xrange(5) :
 			 		 		fimg[i,j]+=a[k,l]
